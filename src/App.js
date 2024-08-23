@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import UserList from './components/UserList';
 import UserForm from './components/UserForm';
-import axios from 'axios'; // Importa axios aquí
+import axios from 'axios'; 
 
 function App() {
     const [editingUser, setEditingUser] = useState(null);
@@ -25,7 +25,7 @@ function App() {
                     <UserForm
                         editingUser={editingUser}
                         setEditingUser={setEditingUser}
-                        fetchUsers={fetchUsers}  // Aquí pasamos fetchUsers
+                        fetchUsers={fetchUsers}  
                     />
                     <UserList setEditingUser={setEditingUser} fetchUsers={fetchUsers} users={users} />
                 </Col>
